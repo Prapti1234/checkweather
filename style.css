@@ -4,9 +4,15 @@
         font-family: 'Poppins',sans-serif;
         box-sizing: border-box;
 }
-body{
-    background: #222;
-}
+body {
+    background-image: url(images/world.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size:cover;
+    background-position: center;
+    height: 100vh;
+    width:auto;
+    }
 .card{
        width: 90%;
         max-width: 470px;
