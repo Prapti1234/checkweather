@@ -11,7 +11,7 @@ body {
 background-image: url(images/world.jpg);
 background-repeat: no-repeat;
 background-attachment: fixed;
-background-size: 100%;
+background-size:cover;
 }
 </style>
 
@@ -51,7 +51,7 @@ background-size: 100%;
    </div>
    <script>
     const apikey="45b4db276fae80d5af872776aa6a143f";
-    const apiurl="https://api.openweathermap.org/data/2.5/weather?units=metric&q=";
+    const apiurl="https://api.openweathermap.org/data/2.5/weather?units=metric&q="
 
     const searchBox = document.querySelector(".search input");
     const searchBtn = document.querySelector(".search button");
@@ -69,6 +69,7 @@ background-size: 100%;
         }
         else{
             var data=await response.json();
+            
         
                 
         document.querySelector(".city").innerHTML=data.name;
@@ -113,7 +114,7 @@ background-size: 100%;
         checkWeather(searchBox.value);
     })
 
-    checkWeather();
+    
    </script>
 
 
